@@ -11,10 +11,17 @@
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/horrorwebgl.json", {onProgress: UnityProgress});
     </script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: url('PVb8.gif') no-repeat center center fixed;
+        background-size: cover;
+      }
+    </style>
   </head>
   <body>
     <div class="webgl-content">
-
       <img src="webgl-logo.png" alt="" srcset="">
       <img src="webgl-logo.png" alt="" srcset="">
       <img src="webgl-logo.png" alt="" srcset=""> 
@@ -29,8 +36,6 @@
         <img src="webgl-logo.png" alt="" srcset="">
         <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
         <div class="title">Zoo</div>
-
-       
       </div>
     </div>
   </body>
