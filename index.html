@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Zoo</title>
@@ -9,34 +9,35 @@
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/horrorwebgl.json", {onProgress: UnityProgress});
+        var unityInstance = UnityLoader.instantiate("unityContainer", "Build/horrorwebgl.json", { onProgress: UnityProgress });
     </script>
     <style>
-      body {
-        margin: 0;
-        padding: 0;
-        background: url('PVb8.gif') no-repeat center center fixed;
-        background-size: cover;
-      }
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevent scrolling */
+            background: url('webgl-logo.png') no-repeat center center fixed; /* Replace with your GIF path */
+            background-size: cover; /* Cover the entire page */
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <div class="webgl-content">
-      <img src="webgl-logo.png" alt="" srcset="">
-      <img src="webgl-logo.png" alt="" srcset="">
-      <img src="webgl-logo.png" alt="" srcset=""> 
-      <img src="webgl-logo.png" alt="" srcset="">
-      
-      <div id="unityContainer" style="width: 960px; height: 600px"></div>
-      
-      <div class="footer">
         <img src="webgl-logo.png" alt="" srcset="">
         <img src="webgl-logo.png" alt="" srcset="">
         <img src="webgl-logo.png" alt="" srcset="">
         <img src="webgl-logo.png" alt="" srcset="">
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">Zoo</div>
-      </div>
+        
+        <div id="unityContainer" style="width: 960px; height: 600px"></div>
+        
+        <div class="footer">
+            <img src="webgl-logo.png" alt="" srcset="">
+            <img src="webgl-logo.png" alt="" srcset="">
+            <img src="webgl-logo.png" alt="" srcset="">
+            <img src="webgl-logo.png" alt="" srcset="">
+            <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+            <div class="title">Zoo</div>
+        </div>
     </div>
-  </body>
+</body>
 </html>
